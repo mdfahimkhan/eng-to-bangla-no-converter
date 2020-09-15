@@ -19,7 +19,7 @@ string = list(alu)
 numerical_range = []
 
 if (len(string)%2)!=0:
-      for a in range(1, len(string)-2,2):
+      for a in range(2, len(string)-2,2):
              numerical_range.append(a)
       for i,j in enumerate(numerical_range):
              string.insert(i+j, ",")
