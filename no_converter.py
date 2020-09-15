@@ -8,13 +8,19 @@ numerics = {'1':'১','2':'২',
 
 
 
-input_no= input('Add no: ').__str__()
-new = input_no.replace(',','')
+inputt=(input('Add no: '))
+input_number_string = inputt.__str__()
+new = inputt.replace(',','')
+new_num = int(new)
+new_str = new_num.__str__()
+
+
 alu = ""
-for a in new:
+for a in new_str:
       hala= numerics[a]
       alu= alu+hala
 print("Digit without comma: "+alu)
+print ("Digit with comma: ")
 string = list(alu)
 numerical_range = []
 
